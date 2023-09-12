@@ -1,0 +1,169 @@
+{
+    "info": {
+        "_postman_id": "e2535838-5547-4ef8-8486-82b1a2971e61",
+        "name": "Blog",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Post Blog",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/blog/addBlog",
+                    "path": [
+                        "blog",
+                        "addBlog"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "data",
+                            "value": "TRIP BLOG 2",
+                            "type": "default"
+                        },
+                        {
+                            "key": "video",
+                            "src": "c:\\Users\\PC 1\\Desktop\\5 Second Countdown HD.mp4",
+                            "disabled": true,
+                            "type": "file"
+                        },
+                        {
+                            "key": "featured_image",
+                            "src": "c:\\Users\\PC 1\\Desktop\\react hooks.png",
+                            "type": "file"
+                        },
+                        {
+                            "key": "image",
+                            "src": "c:\\Users\\PC 1\\Desktop\\New folder (2)\\Tripserio\\backend\\routes\\TripRoutes.js",
+                            "disabled": true,
+                            "type": "file"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "getAllBlogs",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/blog/getBlogs",
+                    "path": [
+                        "blog",
+                        "getBlogs"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "getSingleBlog",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/blog/getBlog/64bed59f1a4770f9f6d3d4df",
+                    "path": [
+                        "blog",
+                        "getBlog",
+                        "64bed59f1a4770f9f6d3d4df"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "Delete Blog",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/blog/deleteBlog/64bed5691a4770f9f6d3d4d9",
+                    "path": [
+                        "blog",
+                        "deleteBlog",
+                        "64bed5691a4770f9f6d3d4d9"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "updateBlog",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/blog/editBlog/64bed59f1a4770f9f6d3d4df",
+                    "path": [
+                        "blog",
+                        "editBlog",
+                        "64bed59f1a4770f9f6d3d4df"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "data",
+                            "value": "TRIP BLOG1 UPDATED",
+                            "type": "default"
+                        },
+                        {
+                            "key": "featured_image",
+                            "src": "c:\\Users\\PC 1\\Desktop\\download.jpg",
+                            "type": "file"
+                        },
+                        {
+                            "key": "video",
+                            "src": "c:\\Users\\PC 1\\Desktop\\5 Second Video_ Watch the Milky Way Rise.mp4",
+                            "disabled": true,
+                            "type": "file"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "DeleteAllBlogs",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/blog/deleteAllBlogs",
+                    "path": [
+                        "blog",
+                        "deleteAllBlogs"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}

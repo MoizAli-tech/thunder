@@ -1,0 +1,100 @@
+{
+    "info": {
+        "_postman_id": "59c8a4c9-20d9-49cd-a163-51d0163fd062",
+        "name": "chat",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "setReceiver",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/chat/setReceiver",
+                    "path": [
+                        "chat",
+                        "setReceiver"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"receiverId\":\"64cc9085f4f8ac4998cda86d\"\n}"
+                }
+            }
+        },
+        {
+            "name": "sendMessage",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/chat/sendMessage",
+                    "path": [
+                        "chat",
+                        "sendMessage"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"message\" : \" hello dude\"\n}"
+                }
+            }
+        },
+        {
+            "name": "chatLoader",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/chat/chatLoader",
+                    "path": [
+                        "chat",
+                        "chatLoader"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "prevChats",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/chat/prevChats",
+                    "path": [
+                        "chat",
+                        "prevChats"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}

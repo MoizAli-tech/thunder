@@ -1,0 +1,203 @@
+{
+    "info": {
+        "_postman_id": "552b71d1-e5e6-4b49-9c07-c7fb8c0481ed",
+        "name": "facebook",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "reel status",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://graph.facebook.com/v17.0/1313976349512747?fields=status&access_token=EAAJqc35fADkBOZBBxUS6128FKf2Wdw09nDf9mZChlEZCQhibkGae4jFEoLZA855uX6fZB0GyG30tTAqDyTYdlPKY6bzbWEmBQGIlYFpJOuY5UxZC75LN1BFJLZCk2Fa7QeZCTmGZARO67rZACVbnl8Ey3S5lEtTu2iqxePUpLihT31kqSVZC4JBDQCbhGJZBea6U6pUZD",
+                    "query": [
+                        {
+                            "key": "fields",
+                            "value": "status"
+                        },
+                        {
+                            "key": "access_token",
+                            "value": "EAAJqc35fADkBOZBBxUS6128FKf2Wdw09nDf9mZChlEZCQhibkGae4jFEoLZA855uX6fZB0GyG30tTAqDyTYdlPKY6bzbWEmBQGIlYFpJOuY5UxZC75LN1BFJLZCk2Fa7QeZCTmGZARO67rZACVbnl8Ey3S5lEtTu2iqxePUpLihT31kqSVZC4JBDQCbhGJZBea6U6pUZD"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "v17.0",
+                        "1313976349512747"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "facebook create reel",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://graph.facebook.com/v17.0/me/video_reels?access_token=EAAJqc35fADkBOZBBxUS6128FKf2Wdw09nDf9mZChlEZCQhibkGae4jFEoLZA855uX6fZB0GyG30tTAqDyTYdlPKY6bzbWEmBQGIlYFpJOuY5UxZC75LN1BFJLZCk2Fa7QeZCTmGZARO67rZACVbnl8Ey3S5lEtTu2iqxePUpLihT31kqSVZC4JBDQCbhGJZBea6U6pUZD &upload_phase=start",
+                    "query": [
+                        {
+                            "key": "access_token",
+                            "value": "EAAJqc35fADkBOZBBxUS6128FKf2Wdw09nDf9mZChlEZCQhibkGae4jFEoLZA855uX6fZB0GyG30tTAqDyTYdlPKY6bzbWEmBQGIlYFpJOuY5UxZC75LN1BFJLZCk2Fa7QeZCTmGZARO67rZACVbnl8Ey3S5lEtTu2iqxePUpLihT31kqSVZC4JBDQCbhGJZBea6U6pUZD"
+                        },
+                        {
+                            "key": "upload_phase",
+                            "value": "start"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "v17.0",
+                        "me",
+                        "video_reels"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "facebook reel upload",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://rupload.facebook.com/video-upload/v17.0/1313976349512747",
+                    "path": [
+                        "video-upload",
+                        "v17.0",
+                        "1313976349512747"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "rupload",
+                        "facebook",
+                        "com"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "OAuth EAAJqc35fADkBOZBBxUS6128FKf2Wdw09nDf9mZChlEZCQhibkGae4jFEoLZA855uX6fZB0GyG30tTAqDyTYdlPKY6bzbWEmBQGIlYFpJOuY5UxZC75LN1BFJLZCk2Fa7QeZCTmGZARO67rZACVbnl8Ey3S5lEtTu2iqxePUpLihT31kqSVZC4JBDQCbhGJZBea6U6pUZD"
+                    },
+                    {
+                        "key": "file_url",
+                        "value": "https://res.cloudinary.com/dz0diu03t/video/upload/v1693925900/videoplayback_vcsx8h.mp4"
+                    },
+                    {
+                        "key": "file_size",
+                        "value": "802816",
+                        "disabled": true
+                    },
+                    {
+                        "key": "offset",
+                        "value": "0",
+                        "disabled": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "publish reel",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://graph.facebook.com/v17.0/me/video_reels?access_token=EAAJqc35fADkBOZBBxUS6128FKf2Wdw09nDf9mZChlEZCQhibkGae4jFEoLZA855uX6fZB0GyG30tTAqDyTYdlPKY6bzbWEmBQGIlYFpJOuY5UxZC75LN1BFJLZCk2Fa7QeZCTmGZARO67rZACVbnl8Ey3S5lEtTu2iqxePUpLihT31kqSVZC4JBDQCbhGJZBea6U6pUZD&video_id=741247268015571&upload_phase=finish&video_state&description=Description text goes here&title=Title goes here",
+                    "query": [
+                        {
+                            "key": "access_token",
+                            "value": "EAAJqc35fADkBOZBBxUS6128FKf2Wdw09nDf9mZChlEZCQhibkGae4jFEoLZA855uX6fZB0GyG30tTAqDyTYdlPKY6bzbWEmBQGIlYFpJOuY5UxZC75LN1BFJLZCk2Fa7QeZCTmGZARO67rZACVbnl8Ey3S5lEtTu2iqxePUpLihT31kqSVZC4JBDQCbhGJZBea6U6pUZD"
+                        },
+                        {
+                            "key": "video_id",
+                            "value": "741247268015571"
+                        },
+                        {
+                            "key": "upload_phase",
+                            "value": "finish"
+                        },
+                        {
+                            "key": "video_state",
+                            "value": ""
+                        },
+                        {
+                            "key": "description",
+                            "value": "Description text goes here"
+                        },
+                        {
+                            "key": "title",
+                            "value": "Title goes here"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "v17.0",
+                        "me",
+                        "video_reels"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "facebook/text",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5500/facebook/text",
+                    "path": [
+                        "facebook",
+                        "text"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5500"
+                }
+            }
+        },
+        {
+            "name": "facebook/image",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5500/facebook/image",
+                    "path": [
+                        "facebook",
+                        "image"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5500"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"image_url\":\"https://images.pexels.com/photos/12761588/pexels-photo-12761588.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load\",\n  \"text\":\"hi my new post\"\n}"
+                }
+            }
+        }
+    ]
+}

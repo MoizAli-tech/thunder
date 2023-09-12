@@ -1,0 +1,180 @@
+{
+    "info": {
+        "_postman_id": "c970c2ae-3db7-42dc-81c6-9f0ac7929f52",
+        "name": "tokens",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "getPages",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://graph.facebook.com/611429867860287/accounts?access_token=EAAJqc35fADkBO2PGHJ4CZAc4KJB8QkU8IGSoWjIEY3Ut89MrtzRb41TaYyl1ZB20IwCAvV7hL2gWflZCjZAq2E5nZB6gJU0yyx6rMMM7buE9AjKl0edRkZB2jTo1OXntKu7CeE8nMXyFV0BoMNcq2156wOlLc72zxU1odZCLClig8ylXtpBhbGmU2gBKTvJSZBCATzyf2MLZCm8Vj6Sq4ZA3fZCQjhFrPoZD",
+                    "query": [
+                        {
+                            "key": "access_token",
+                            "value": "EAAJqc35fADkBO2PGHJ4CZAc4KJB8QkU8IGSoWjIEY3Ut89MrtzRb41TaYyl1ZB20IwCAvV7hL2gWflZCjZAq2E5nZB6gJU0yyx6rMMM7buE9AjKl0edRkZB2jTo1OXntKu7CeE8nMXyFV0BoMNcq2156wOlLc72zxU1odZCLClig8ylXtpBhbGmU2gBKTvJSZBCATzyf2MLZCm8Vj6Sq4ZA3fZCQjhFrPoZD"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "611429867860287",
+                        "accounts"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Long-Lived User Access Tokens",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://graph.facebook.com/v17.0/oauth/access_token?grant_type=fb_exchange_token&client_id=679994227359801&client_secret=e5d556bf027b102f20263c58008264ee&fb_exchange_token=EAAJqc35fADkBO90uCLt4y25GooPNhkRB8GZAhSjXejbt5fUF3W3T0X12auT4cgUcaKwaQg5Ip2Y8TwPyYK1Lt1P8snlvt4pPWm4Xw5A6ZCXr8PyRCvsEZA7gK6ZAsgp5Uz2B1PQkHZAnDENE35QtulyM0qPhLRMHqS5PaTetYEdqyfvOJGYjaBqzCrA9NZAJIXsZA5PBD2kdgPGUQ8NFwyUOZB6vV6sZD",
+                    "query": [
+                        {
+                            "key": "grant_type",
+                            "value": "fb_exchange_token"
+                        },
+                        {
+                            "key": "client_id",
+                            "value": "679994227359801"
+                        },
+                        {
+                            "key": "client_secret",
+                            "value": "e5d556bf027b102f20263c58008264ee"
+                        },
+                        {
+                            "key": "fb_exchange_token",
+                            "value": "EAAJqc35fADkBO90uCLt4y25GooPNhkRB8GZAhSjXejbt5fUF3W3T0X12auT4cgUcaKwaQg5Ip2Y8TwPyYK1Lt1P8snlvt4pPWm4Xw5A6ZCXr8PyRCvsEZA7gK6ZAsgp5Uz2B1PQkHZAnDENE35QtulyM0qPhLRMHqS5PaTetYEdqyfvOJGYjaBqzCrA9NZAJIXsZA5PBD2kdgPGUQ8NFwyUOZB6vV6sZD"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "v17.0",
+                        "oauth",
+                        "access_token"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Long Lived Page Access Tokens",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://graph.facebook.com/v17.0/611429867860287/accounts?fields=id,name,access_token&access_token=EAAJqc35fADkBOZCaUKsRmNxQrQz4VZB08sRTTFePZBAoKBXTRASu1ZC2LYDSoHZBhSxo4jGyZCledWZBR8Qbk6kQyM8MeQ0vNM8qn2leHPHanBz5W9pP3i9s7J5aOFBYFe9U6SgV7hls78PblDiIYElqoIc7SUeqevZBZAWltIwbOLAtGbgSZAkHYrbL7U",
+                    "query": [
+                        {
+                            "key": "fields",
+                            "value": "id,name,access_token"
+                        },
+                        {
+                            "key": "access_token",
+                            "value": "EAAJqc35fADkBOZCaUKsRmNxQrQz4VZB08sRTTFePZBAoKBXTRASu1ZC2LYDSoHZBhSxo4jGyZCledWZBR8Qbk6kQyM8MeQ0vNM8qn2leHPHanBz5W9pP3i9s7J5aOFBYFe9U6SgV7hls78PblDiIYElqoIc7SUeqevZBZAWltIwbOLAtGbgSZAkHYrbL7U"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "v17.0",
+                        "611429867860287",
+                        "accounts"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "code generator",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://graph.facebook.com/v17.0/oauth/client_code?client_id=679994227359801&client_secret=e5d556bf027b102f20263c58008264ee&redirect_uri=https://fb5b-111-68-97-103.ngrok-free.app/&access_token=EAAJqc35fADkBO0vdoWafzzlTKGxXZCgOOTLQdmgieL5hgSxEYZC6jWqX2eZBw7qJHwIu7If5XJfI8xRkGPE6ayJbh7n3leKL0cZCTEClbDhZCqqjjRMDf9H5gipzhXo7bEsF3zggTItBENpF2dergMgdawea9RzfniBZAix9wUWEs1mZC0Xo0qSMFk6",
+                    "query": [
+                        {
+                            "key": "client_id",
+                            "value": "679994227359801"
+                        },
+                        {
+                            "key": "client_secret",
+                            "value": "e5d556bf027b102f20263c58008264ee"
+                        },
+                        {
+                            "key": "redirect_uri",
+                            "value": "https://fb5b-111-68-97-103.ngrok-free.app/"
+                        },
+                        {
+                            "key": "access_token",
+                            "value": "EAAJqc35fADkBO0vdoWafzzlTKGxXZCgOOTLQdmgieL5hgSxEYZC6jWqX2eZBw7qJHwIu7If5XJfI8xRkGPE6ayJbh7n3leKL0cZCTEClbDhZCqqjjRMDf9H5gipzhXo7bEsF3zggTItBENpF2dergMgdawea9RzfniBZAix9wUWEs1mZC0Xo0qSMFk6"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "v17.0",
+                        "oauth",
+                        "client_code"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Long Lived Token From Code",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://graph.facebook.com/v17.0/oauth/access_token?code=AQASYeDwQNdQfsG2E_NH95JEB6M4Pv7BUE_hq27_nFFv9ZaazoQdanx7rajyPIDOwrFbos8l5rURb0YW2IvPdBNM1C5y8PqFMCy7BcSWnIv7eN9LqlEm8XN6aDVMm12L6g9T7I07anSEK2RFeqC4kX4TiJQD_w2T2FeIZllcgQVgB85HMttYx1uM4o5J16GmKkrMvP3s8u52s4VoQQb0iqaeqjXFt8C68ab_w8BuowQCS4WFSokYDvvi_pkEdXqP25MEYqfrqaivkLC6wJnYr6ewnARegJPJtLxmEh4kbkdpWX1Rg1Ej2treYmV7hfao_5M&client_id=679994227359801&redirect_uri=https://fb5b-111-68-97-103.ngrok-free.app/",
+                    "query": [
+                        {
+                            "key": "code",
+                            "value": "AQASYeDwQNdQfsG2E_NH95JEB6M4Pv7BUE_hq27_nFFv9ZaazoQdanx7rajyPIDOwrFbos8l5rURb0YW2IvPdBNM1C5y8PqFMCy7BcSWnIv7eN9LqlEm8XN6aDVMm12L6g9T7I07anSEK2RFeqC4kX4TiJQD_w2T2FeIZllcgQVgB85HMttYx1uM4o5J16GmKkrMvP3s8u52s4VoQQb0iqaeqjXFt8C68ab_w8BuowQCS4WFSokYDvvi_pkEdXqP25MEYqfrqaivkLC6wJnYr6ewnARegJPJtLxmEh4kbkdpWX1Rg1Ej2treYmV7hfao_5M"
+                        },
+                        {
+                            "key": "client_id",
+                            "value": "679994227359801"
+                        },
+                        {
+                            "key": "redirect_uri",
+                            "value": "https://fb5b-111-68-97-103.ngrok-free.app/"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "v17.0",
+                        "oauth",
+                        "access_token"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "graph",
+                        "facebook",
+                        "com"
+                    ]
+                }
+            }
+        }
+    ]
+}

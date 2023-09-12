@@ -1,0 +1,227 @@
+{
+    "info": {
+        "_postman_id": "50d99c4b-797c-40fc-8c26-d90aec496c70",
+        "name": "User ",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/user/register",
+                    "path": [
+                        "user",
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\":\"balh\",\n  \"email\":\"blah@gmail.com\",\n  \"password\":\"1122\",\n  \"cpassword\" :\"1122\",\n  \"role\":\"planner\"\n}"
+                }
+            }
+        },
+        {
+            "name": "forgotPassword",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/user/forgotPassword",
+                    "path": [
+                        "user",
+                        "forgotPassword"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\":\"aalikhan3149@gmail.com\"\n}"
+                }
+            }
+        },
+        {
+            "name": "resetPassword",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/user/resetPassword/a946355e8eb0543dbe5e654987842f5df7afcd33",
+                    "path": [
+                        "user",
+                        "resetPassword",
+                        "a946355e8eb0543dbe5e654987842f5df7afcd33"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"password\":\"1122\",\n  \"cPassword\":\"1122\"\n}"
+                }
+            }
+        },
+        {
+            "name": "me",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/user/me",
+                    "path": [
+                        "user",
+                        "me"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \n  \"email\":\"amoiz3149@gmail.com\",\n  \"password\":\"1234\"\n \n}"
+                }
+            }
+        },
+        {
+            "name": "deleteUser",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/user/deleteUser/64ae4b0b4bf4b4c610e5c68e",
+                    "path": [
+                        "user",
+                        "deleteUser",
+                        "64ae4b0b4bf4b4c610e5c68e"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "logout",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/user/logout",
+                    "path": [
+                        "user",
+                        "logout"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/user/login",
+                    "path": [
+                        "user",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\":\"romeo@gmail.com\",\n  \"password\":\"1122\"\n}"
+                }
+            }
+        },
+        {
+            "name": "updatePassword",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/user/updatePassword",
+                    "path": [
+                        "user",
+                        "updatePassword"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"oldPassword\":\"1122\",\n  \"password\":\"1234\",\n  \"cpassword\":\"1234\"\n}"
+                }
+            }
+        },
+        {
+            "name": "getAllUsers",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/user/",
+                    "path": [
+                        "user"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}
